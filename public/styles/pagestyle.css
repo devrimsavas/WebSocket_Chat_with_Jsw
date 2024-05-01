@@ -1,0 +1,142 @@
+body, html {
+    height: 80%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top:5px;
+    background-color: #1f7fe7;
+}
+
+.main-containter {
+    display:flex;
+    width:80%;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+}
+
+
+#userInfo {
+    display: flex;
+    justify-content: center;
+    align-items: auto;
+    
+    
+}
+
+
+
+#messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    background: #ffffff; /* Light grey background */
+    border-style:solid;
+    border-width:1px;
+    border-radius:5px;
+    width:50%;
+    
+}
+#form {
+    flex-shrink: 0; /* Prevent form from being resized */
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: 0 -1px 10px rgba(0,0,0,0.1);
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.chatwindow {
+    color:blue;
+    font-weight:bold;
+    font-size:20px;
+}
+
+
+.centered-form {
+    min-height: 100vh; /* Full height */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.form-container {
+    width: 100%; /* Full width */
+    max-width: 330px; /* Maximum width */
+    padding: 15px;
+    margin: auto;
+}
+
+.form-signin {
+    width: 100%; /* Full width */
+}
+
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px; /* More padding */
+    font-size: 16px; /* Larger font size */
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.btn-block {
+    padding: 10px; /* Increased padding */
+    font-size: 18px; /* Larger font size */
+}
+
+
+.form-signup {
+    width: 100%; /* Full width */
+}
+
+.form-signup .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px; /* More padding */
+    font-size: 16px; /* Larger font size */
+}
+
+.form-signup .form-control:focus {
+    z-index: 2;
+}
+
+.form-signup input[type="email"],
+.form-signup input[type="text"],
+.form-signup input[type="password"] {
+    margin-bottom: 10px;
+    border-radius: 5px; /* Rounded borders for all input types */
+}
+
+
+
+.testClass {
+    color: #333; /* Example: dark text */
+    background-color: #ccd4cd; /* Light grey background */
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}

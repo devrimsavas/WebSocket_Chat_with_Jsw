@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Page - User</title>
+    <link rel="stylesheet" href="/styles/pagestyle.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    
+</head>
+<body>
+    <div class="container-fluid bg-info bg-gradient" id="navbar">
+    </div>
+    <div class="container-fluid">
+        <h1 id="welcomeMessage">Welcome to the Chat Page, User!</h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm bg-info">
+                test 1
+            </div>
+            <div class="col-sm bg-warning">
+                test 2
+            </div>
+
+        </div>
+    </div>
+    
+    
+    <div id="messages"></div> 
+    <form class="form" id="form" action="">
+        <input class="form-control" id="input" autocomplete="off" />
+        <button class="btn btn-primary my-3">Send</button>
+    </form>
+
+   
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascripts/common.js"></script>
+    
+</body>
+</html>

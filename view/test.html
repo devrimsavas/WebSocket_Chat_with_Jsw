@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Page - User</title>
+    
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+        }
+        #chat-window {
+            padding-bottom: 80px; /* Adjust this value as needed for your layout */
+        }
+        #messages {
+            height: 500px; /* Adjust this height as needed */
+            overflow-y: auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px; /* Space for the form */
+        }
+        #chat-input {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            background: #fff;
+            border-top: 1px solid #ddd;
+        }
+        .online-users {
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid bg-info bg-gradient">
+        <h1 id="welcomeMessage">Welcome to the Chat Page, User!</h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9" id="chat-window">
+                <div id="messages"></div>
+                <div id="chat-input">
+                    <form class="form-inline" id="form">
+                        <input class="form-control col-9" id="input" autocomplete="off" placeholder="Type your message here..." />
+                        <button class="btn btn-primary col-3">Send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-3 bg-warning online-users">
+                <h4>Online Users</h4>
+                <ul id="users" class="list-group">
+                    <!-- Online users will be listed here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascripts/common.js"></script>
+</body>
+</html>

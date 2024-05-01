@@ -1,0 +1,20 @@
+
+
+[
+    {
+      "email": "user1@example.com",
+      "password": "aaaa",
+      "name": "John Doe"
+    },
+    {
+      "email": "user2@example.com",
+      "password": "aaaa",
+      "name": "William Smith"
+    },
+    {
+      "email": "user3@example.com",
+      "password": "aaaa",
+      "name": "Jane Thomas"
+    }
+  ]
+  

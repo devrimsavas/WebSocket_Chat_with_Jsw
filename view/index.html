@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/pagestyle.css">
+    <title>Login Page</title>
+    
+</head>
+<body>
+    <div class="centered-form">
+        <div class="form-container">
+            <h1 class="h3 mb-3 font-weight-normal text-center">Please sign in</h1>
+            <form class="form-signin" action="/login" method="POST">
+                <label for="email" class="sr-only">Email address</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Email address" required autofocus>
+                <label for="password" class="sr-only">Password</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+                <p class="mt-5 mb-3 text-muted text-center">&copy; 2024</p>
+                <div class="text-center mt-2">
+                    <a href="/signup">Don't have an account? Sign up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
